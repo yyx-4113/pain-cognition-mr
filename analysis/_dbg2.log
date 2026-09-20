@@ -1,0 +1,15 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Warning message:
+In readLines(jwt_path, n = 1) :
+  incomplete final line found on 'D:/2026.9/极速交付9月会员日优惠套路/03_观察性研究+孟德尔随机化双验证/孟德尔疼痛/pain-cognition-mr/../JWT.txt'
+CORRECTED WMed: -0.9486187  (idx 18 )
+Testing associations for ieu-a-298 ...
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+OK rows: 0  cols:  
+Error: unexpected 'else' in "else"
+Execution halted

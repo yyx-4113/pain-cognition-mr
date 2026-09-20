@@ -1,0 +1,57 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Warning message:
+In readLines(jwt_path, n = 1) :
+  incomplete final line found on 'D:/2026.9/极速交付9月会员日优惠套路/03_观察性研究+孟德尔随机化双验证/孟德尔疼痛/pain-cognition-mr/../JWT.txt'
+Loaded cached significant SNPs: 2100 
+Clumping MCP instruments (EUR)...
+Please look at vignettes for options on running this locally if you need to run many instances of this command.
+Clumping v2lQCk, 2100 variants, using EUR population reference
+Removing 2049 of 2100 variants due to LD with other variants or absence from LD reference panel
+  clumped to 51 loci SNPs
+Exposure instruments for MR: 51 
+
+=== Forward: MCP -> Cognitive performance (COGENT/UKB) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  harmonized SNPs: 41 
+   outcome n_snps IVW_beta IVW_se_fixed  IVW_se_RE  IVW_p_fixed     IVW_p_RE
+bx     cog     41  -0.3614   0.03166889 0.07797663 3.649674e-30 3.574178e-06
+   Egger_beta   Egger_se      Egger_p     Egger_int Egger_int_p WMed_beta
+bx -0.3623215 0.07886136 4.339739e-06 -0.0004767593   0.7038354    0.0146
+      WMed_se Cochran_Q Cochran_df    Cochran_p Steiger_Vexp Steiger_Vout
+bx 0.04435796  242.5064         40 8.293166e-31  0.003520667  0.001445403
+   Steiger_dir Steiger_p LOO_beta_min LOO_beta_max
+bx        X->Y 0.2305676   -0.3862272   -0.3149076
+
+=== Forward: MCP -> Alzheimer's disease (IGAP) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  ! no outcome data, skip
+
+=== Forward: MCP -> All-cause dementia (FinnGen R5) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  harmonized SNPs: 43 
+    outcome n_snps  IVW_beta IVW_se_fixed IVW_se_RE IVW_p_fixed  IVW_p_RE
+bx dementia     43 0.2338767    0.2134337 0.2134337   0.2731743 0.2731743
+   Egger_beta  Egger_se   Egger_p    Egger_int Egger_int_p WMed_beta   WMed_se
+bx  0.2085122 0.2044452 0.3077793 -0.004218824   0.1848644    -0.014 0.3012922
+   Cochran_Q Cochran_df Cochran_p Steiger_Vexp Steiger_Vout Steiger_dir
+bx  38.88903         42 0.6083108  0.003658947 0.0001849386        X->Y
+   Steiger_p LOO_beta_min LOO_beta_max
+bx 0.2088647    0.1628972    0.2929866
+
+=== Reverse: Cognitive performance -> MCP ===
+  reverse MR error: could not find function "." 
+
+Wrote data/derived/mr_bidirectional_results.csv ( 2  outcome rows )
+DONE
+exit=0

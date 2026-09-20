@@ -1,0 +1,78 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Warning message:
+In readLines(jwt_path, n = 1) :
+  incomplete final line found on 'D:/2026.9/极速交付9月会员日优惠套路/03_观察性研究+孟德尔随机化双验证/孟德尔疼痛/pain-cognition-mr/../JWT.txt'
+MCP instruments: 51 
+
+=== Mediator: Major depression (PGC 2019) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  step1 (MCP->mediator): b= 0.6198  se= 0.0791  Egger_int_p= 0.076  n= 41 
+Please look at vignettes for options on running this locally if you need to run many instances of this command.
+Clumping oFknWV, 50 variants, using EUR population reference
+Removing 1 of 50 variants due to LD with other variants or absence from LD reference panel
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  step2 (mediator->cognition): b= -0.078  se= 0.0483  Egger_int_p= 0.714  n= 45 
+
+=== Mediator: C-reactive protein (Said 2022) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  step1 (MCP->mediator): b= 0.1799  se= 0.0521  Egger_int_p= 0.767  n= 47 
+Please look at vignettes for options on running this locally if you need to run many instances of this command.
+Clumping VZ5fto, 264 variants, using EUR population reference
+Removing 5 of 264 variants due to LD with other variants or absence from LD reference panel
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 5
+Querying variant chunk 2 of 5
+Querying variant chunk 3 of 5
+Querying variant chunk 4 of 5
+Querying variant chunk 5 of 5
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 5
+Querying variant chunk 2 of 5
+Querying variant chunk 3 of 5
+Querying variant chunk 4 of 5
+Querying variant chunk 5 of 5
+  step2 (mediator->cognition): b= 0.001  se= 0.0138  Egger_int_p= 0.402  n= 231 
+
+=== Mediator: Insomnia (Elsworth 2018) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  step1 (MCP->mediator): b= 0.2651  se= 0.0314  Egger_int_p= 0.417  n= 42 
+Please look at vignettes for options on running this locally if you need to run many instances of this command.
+Clumping RK0eUz, 42 variants, using EUR population reference
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  step2 (mediator->cognition): b= -0.0187  se= 0.1033  Egger_int_p= 0.658  n= 42 
+             mediator        mediator_id step1_n step1_beta   step1_se
+depression depression          ieu-b-102      41  0.6197614 0.07912439
+crp               crp ebi-a-GCST90029070      47  0.1798725 0.05210286
+insomnia     insomnia         ukb-b-3957      42  0.2651258 0.03138440
+                step1_p  step1_Q     step1_Qp step1_Egger_int_p step2_n
+depression 4.773177e-15 108.4257 3.160800e-08         0.0764589      45
+crp        5.559178e-04 282.9033 8.011089e-36         0.7665524     231
+insomnia   2.971114e-17 150.9480 1.711806e-14         0.4172844      42
+              step2_beta   step2_se   step2_p  step2_Q     step2_Qp
+depression -0.0780297629 0.04830496 0.1062333 408.8302 1.210298e-60
+crp         0.0009546211 0.01381775 0.9449207 915.6673 1.601576e-82
+insomnia   -0.0186772930 0.10332252 0.8565505 226.6448 1.556108e-27
+           step2_Egger_int_p      indirect indirect_se  indirect_lo indirect_hi
+depression         0.7143209 -0.0483598377 0.030567561 -0.108272257 0.011552582
+crp                0.4019614  0.0001717101 0.002485931 -0.004700715 0.005044135
+insomnia           0.6578718 -0.0049518324 0.027399737 -0.058655317 0.048751652
+           indirect_p
+depression  0.1136350
+crp         0.9449317
+insomnia    0.8565830
+
+Wrote data/derived/mr_mediation_results.csv
+DONE

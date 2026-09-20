@@ -1,0 +1,10 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Error in file(con, "rb") : cannot open the connection
+Calls: bind_rows ... standardise_path -> detect_compression -> readBin -> file
+In addition: Warning message:
+In file(con, "rb") : cannot open file 'D:/2026.9/fi': Invalid argument
+Execution halted

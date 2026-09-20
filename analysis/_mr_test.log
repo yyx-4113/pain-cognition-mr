@@ -1,0 +1,36 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Warning message:
+In readLines(jwt_path, n = 1) :
+  incomplete final line found on 'D:/2026.9/极速交付9月会员日优惠套路/03_观察性研究+孟德尔随机化双验证/孟德尔疼痛/pain-cognition-mr/../JWT.txt'
+Reading MCP (full)...
+  cached significant SNPs: 2100 -> data/derived/_mcp_sig.rds 
+Clumping...
+Please look at vignettes for options on running this locally if you need to run many instances of this command.
+Clumping skKBh4, 2100 variants, using EUR population reference
+Removing 2049 of 2100 variants due to LD with other variants or absence from LD reference panel
+  clumped loci SNPs: 51 
+Extracting outcome ebi-a-GCST006572 for clumped SNPs...
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  outcome rows: 45 
+  outcome cols: id|trait|chr|position|rsid|ea|nea|eaf|beta|se|p|n|target_snp|proxy_snp|proxy|target_a1|target_a2|proxy_a1|proxy_a2 
+                id                 trait chr  position       rsid ea nea    eaf
+1 ebi-a-GCST006572 Cognitive performance   1  32199099  rs3766823  T   G 0.1446
+2 ebi-a-GCST006572 Cognitive performance   1  51016603 rs10888692  A   G 0.4558
+3 ebi-a-GCST006572 Cognitive performance   1  78623626 rs17391694  T   C 0.1122
+4 ebi-a-GCST006572 Cognitive performance   1 150475772 rs77945800  G   A 0.3827
+5 ebi-a-GCST006572 Cognitive performance   1 219557117 rs12044175  A   G 0.2874
+6 ebi-a-GCST006572 Cognitive performance  10 106453832 rs11599236  A   G 0.4184
+      beta      se
+1 -0.00179 0.00379
+2 -0.00415 0.00287
+3 -0.00010 0.00418
+4 -0.00115 0.00291
+5  0.00134 0.00307
+6  0.01327 0.00290
+TEST_DONE
+exit=0

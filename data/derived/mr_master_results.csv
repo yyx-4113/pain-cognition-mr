@@ -1,0 +1,6 @@
+direction,n_snps,IVW_beta,IVW_se_fixed,IVW_p_txt,IVW_beta_RE,IVW_se_RE,Egger_beta,Egger_int_p_txt,WMed_beta,WMed_se,Cochran_Q,Cochran_p_txt,LOO_min,LOO_max,interpretation
+MCP -> cognition,41,-0.3614,0.0317,<0.001,-0.4033,0.0749,-0.3623,0.344,-0.2332,0.0477,242.51,<0.001,-0.3862,-0.3149,Strong evidence: genetically-predicted multisite chronic pain lowers cognitive performance
+MCP -> all-cause dementia,43,0.2339,0.2134,0.273,0.2339,0.2134,0.2085,0.206,0.2198,0.3008,38.89,0.608,0.1629,0.293,Null: no evidence MCP raises all-cause dementia
+MCP -> AD (IGAP ieu-a-297),42,0.4658,0.1749,0.008,0.4875,0.1908,0.4623,0.856,0.2269,0.2492,48.77,0.189,0.3934,0.5177,Significant: MCP raises AD risk (IGAP); needs replication
+MCP -> AD (Ben Nevis ieu-b-2),43,0.1679,0.1582,0.288,0.2013,0.1755,0.1632,0.777,-0.0174,0.2243,51.76,0.144,0.1116,0.2278,Null: Ben Nevis AD GWAS does not replicate
+cognition -> MCP (reverse),146,-0.1709,0.0107,<0.001,-0.1828,0.0188,-0.1718,0.139,-0.1213,0.0158,474.8,<0.001,-0.1764,-0.1637,Both directions significant -> directional causality uncertain; possible pleiotropy/shared architecture

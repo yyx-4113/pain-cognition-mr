@@ -1,0 +1,99 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Installing: TwoSampleMR, cmprsk, readxl 
+also installing the dependencies 'rematch', 'cellranger', 'cpp11'
+
+
+  There are binary versions available but the source versions are later:
+       binary  source needs_compilation
+cpp11   0.5.4   0.5.5             FALSE
+readxl  1.4.5 1.5.0.1              TRUE
+
+  Binaries will be installed
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rematch_2.0.0.zip'
+Content type 'application/zip' length 19454 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/cellranger_1.1.0.zip'
+Content type 'application/zip' length 107375 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/cmprsk_2.2-12.zip'
+Content type 'application/zip' length 93256 bytes (91 KB)
+==================================================
+downloaded 91 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/readxl_1.4.5.zip'
+Content type 'application/zip' length 749935 bytes (732 KB)
+==================================================
+downloaded 732 KB
+
+package 'rematch' successfully unpacked and MD5 sums checked
+package 'cellranger' successfully unpacked and MD5 sums checked
+package 'cmprsk' successfully unpacked and MD5 sums checked
+package 'readxl' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	D:\Cache\Temp\RtmpeG0mdE\downloaded_packages
+installing the source package 'cpp11'
+
+trying URL 'https://cloud.r-project.org/src/contrib/cpp11_0.5.5.tar.gz'
+Content type 'application/x-gzip' length 304823 bytes (297 KB)
+==================================================
+downloaded 297 KB
+
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+* installing *source* package 'cpp11' ...
+** package 'cpp11' successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+** help
+*** installing help indices
+** building package indices
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+** testing if installed package can be loaded from final location
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+** testing if installed package keeps a record of temporary installation path
+* DONE (cpp11)
+
+The downloaded source packages are in
+	'D:\Cache\Temp\RtmpeG0mdE\downloaded_packages'
+Warning message:
+package 'TwoSampleMR' is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+DONE-INSTALL
+STILL-MISSING: TwoSampleMR 

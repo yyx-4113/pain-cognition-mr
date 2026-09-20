@@ -1,0 +1,3 @@
+outcome,n_snps,IVW_beta,IVW_se_fixed,IVW_p_fixed,IVW_beta_RE,IVW_se_RE,Egger_beta,Egger_se,Egger_int,Egger_int_p,WMed_beta,WMed_se,Cochran_Q,Cochran_df,Cochran_p,LOO_min,LOO_max,LOO_flips,Steiger_Vexp,Steiger_Vout,Steiger_dir,Steiger_p
+MCP->Cognitive_performance,41,-0.3614,0.0317,3.65e-30,-0.4033,0.0749,-0.3623,0.0317,-0.000477,0.3441,-0.2332,0.0477,242.51,40,8.29e-31,-0.3862,-0.3149,0,0.003520667,0.001445403,X->Y,0.2305676
+MCP->All_cause_dementia,43,0.2339,0.2134,0.273,0.2339,0.2134,0.2085,0.2144,-0.004219,0.206,0.2198,0.3008,38.89,42,0.608,0.1629,0.293,0,0.003658947,0.0001849386,X->Y,0.2088647

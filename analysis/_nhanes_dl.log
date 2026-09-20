@@ -1,0 +1,51 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+=== cycle 2011-2012 ===
+Data set  DEMO  is not available
+Data set  MCQ  is not available
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/DPQ.XPT': HTTP status was '404 Not Found'
+
+
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/SLQ.XPT': HTTP status was '404 Not Found'
+
+
+Data set  PFQ  is not available
+Data set  HSQ  is not available
+=== cycle 2013-2014 ===
+Data set  DEMO  is not available
+Data set  MCQ  is not available
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/DPQ.XPT': HTTP status was '404 Not Found'
+
+
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/SLQ.XPT': HTTP status was '404 Not Found'
+
+
+Data set  PFQ  is not available
+Data set  HSQ  is not available
+=== cycle 2015-2016 ===
+Data set  DEMO  is not available
+Data set  MCQ  is not available
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/DPQ.XPT': HTTP status was '404 Not Found'
+
+
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/SLQ.XPT': HTTP status was '404 Not Found'
+
+
+Data set  PFQ  is not available
+Data set  HSQ  is not available
+=== cycle 2017-2018 ===
+Data set  DEMO  is not available
+Data set  MCQ  is not available
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/DPQ.XPT': HTTP status was '404 Not Found'
+
+
+simpleWarning in download.file(url, tf, mode = "wb", quiet = TRUE): cannot open URL 'https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/SLQ.XPT': HTTP status was '404 Not Found'
+
+
+Data set  HSQ  is not available
+
+NHANES pull finished -> D:/2026.9/fi/data/raw/nhanes 
+Next: Rscript analysis/11_nhanes_extract.R  (merges by SEQN, applies weights, defines proxies).

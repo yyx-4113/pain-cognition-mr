@@ -1,0 +1,13 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+ld_clump:/nfunction (dat = NULL, clump_kb = 10000, clump_r2 = 0.001, clump_p = 0.99, 
+    pop = "EUR", opengwas_jwt = get_opengwas_jwt(), bfile = NULL, 
+    plink_bin = NULL, ...) 
+NULL
+associations:/nfunction (variants, id, proxies = 1, r2 = 0.8, align_alleles = 1, 
+    palindromes = 1, maf_threshold = 0.3, opengwas_jwt = get_opengwas_jwt(), 
+    assocs_per_request = 64, max_ids_per_request = 10, ...) 
+NULL

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Multisite chronic pain and cognitive decline: CHARLS + NHANES cohorts with bidirectional MR and mediation"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: "Yongxin"
+    family-names: "Yang"
+    orcid: "https://orcid.org/0009-0004-9698-6552"
+    affiliation: "The Second Affiliated Hospital of Fujian University of Traditional Chinese Medicine"
+repository-code: "https://github.com/yyx-4113/pain-cognition-mr"
+license: MIT
+keywords:
+  - "Mendelian randomization"
+  - "chronic pain"
+  - "cognitive decline"
+  - "dementia"
+  - "CHARLS"
+  - "NHANES"
+  - "epidemiology"

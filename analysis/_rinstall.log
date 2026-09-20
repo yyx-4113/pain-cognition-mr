@@ -1,0 +1,29 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+also installing the dependencies 'R.oo', 'R.methodsS3'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/R.oo_1.27.1.zip'
+Content type 'application/zip' length 1001598 bytes (978 KB)
+==================================================
+downloaded 978 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/R.methodsS3_1.8.2.zip'
+Content type 'application/zip' length 84569 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/R.utils_2.13.0.zip'
+Content type 'application/zip' length 1463793 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+package 'R.oo' successfully unpacked and MD5 sums checked
+package 'R.methodsS3' successfully unpacked and MD5 sums checked
+package 'R.utils' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	D:\Cache\Temp\RtmpSsfaag\downloaded_packages
+RUTILS_DONE

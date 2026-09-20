@@ -1,0 +1,51 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Warning message:
+In readLines(jwt_path, n = 1) :
+  incomplete final line found on 'D:/2026.9/极速交付9月会员日优惠套路/03_观察性研究+孟德尔随机化双验证/孟德尔疼痛/pain-cognition-mr/../JWT.txt'
+Exposure instruments (MCP): 51 
+
+=== MCP -> AD (IGAP ieu-a-297) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  harmonized SNPs: 42 
+   outcome n_snps IVW_beta IVW_se_fixed IVW_p_fixed IVW_beta_RE IVW_se_RE
+1 ad_igap2     42   0.4658       0.1749     0.00773      0.4875    0.1908
+  Egger_beta Egger_se Egger_int Egger_int_p WMed_beta WMed_se Cochran_Q
+1     0.4623    0.176 -0.000501      0.8561    0.2269  0.2492     48.77
+  Cochran_df Cochran_p LOO_min LOO_max LOO_flips
+1         41     0.189  0.3934  0.5177         0
+
+=== MCP -> AD (Ben Nevis ieu-b-2) ===
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 1
+  harmonized SNPs: 43 
+      outcome n_snps IVW_beta IVW_se_fixed IVW_p_fixed IVW_beta_RE IVW_se_RE
+1 ad_bennevis     43   0.1679       0.1582       0.288      0.2013    0.1755
+  Egger_beta Egger_se Egger_int Egger_int_p WMed_beta WMed_se Cochran_Q
+1     0.1632   0.1591 -0.000715      0.7767   -0.0174  0.2243     51.76
+  Cochran_df Cochran_p LOO_min LOO_max LOO_flips
+1         42     0.144  0.1116  0.2278         0
+
+=== Reverse: Cognitive performance -> MCP ===
+Please look at vignettes for options on running this locally if you need to run many instances of this command.
+Clumping qe4Uxc, 146 variants, using EUR population reference
+  cognitive instruments (clumped): 146 
+Querying id chunk 1 of 1
+Querying variant chunk 1 of 3
+Querying variant chunk 2 of 3
+Querying variant chunk 3 of 3
+  reading MCP for cognitive instruments (one-time)...
+  reverse harmonized SNPs: 146 
+           outcome n_snps IVW_beta IVW_se_fixed IVW_p_fixed IVW_beta_RE
+1 reverse_cog_pain    146  -0.1709       0.0107    8.85e-58     -0.1828
+  IVW_se_RE Egger_beta Egger_se Egger_int Egger_int_p WMed_beta WMed_se
+1    0.0188    -0.1718   0.0107  0.000334      0.1386   -0.1213  0.0158
+  Cochran_Q Cochran_df Cochran_p LOO_min LOO_max LOO_flips
+1     474.8        145   1.1e-36 -0.1764 -0.1637         0
+
+Wrote data/derived/mr_ad_reverse_results.csv ( 3  rows )
+DONE
