@@ -2,6 +2,16 @@
 
 **Multisite chronic pain and cognitive decline / dementia: a bidirectional two-sample Mendelian randomization study (version B — MR + NHANES descriptive support; CHARLS longitudinal pending)**
 
+> **Preprint (version 1).** This repository is the reproducibility package for the preprint
+> *"Genetically predicted multisite chronic pain is associated with lower cognitive performance:
+> a bidirectional Mendelian randomization study with NHANES contextual evidence."*
+> The preprint is being posted to **Research Square** (not peer-reviewed). The CHARLS
+> longitudinal validation is planned (`[PENDING DATA]`) and will be incorporated to upgrade
+> this work to version 2 / version A once data-access is approved. Findings are
+> **hypothesis-generating**: causal direction is unresolved (significant reverse MR;
+> non-significant Steiger test), and the cognitive-performance result is constrained by
+> UK Biobank sample overlap between exposure and outcome.
+
 A reproducible analysis package for the study protocol `方案二_多部位慢性疼痛与认知下降的双队列与双向MR.md`.
 
 ## Authors
@@ -27,7 +37,7 @@ pain-cognition-mr/
 ├── LICENSE                          # MIT
 ├── GITHUB_DEPOSIT_SOP.md            # Chinese deposit walkthrough
 ├── author_verification_statement.md  # author verification statement
-├── .github/workflows/release.yml    # release artifact build
+├── .github/workflows/release.yml    # release artifact build _(pending — CI requires `workflow` OAuth scope)_
 ├── docs/
 │   ├── gwas_catalog.md              # VERIFIED MR GWAS accession IDs (traceable)
 │   └── 00_sap.md                    # Statistical Analysis Plan (SAP)
@@ -100,3 +110,11 @@ Each script writes dated, versioned outputs under `data/derived/` and prints a m
 ## Data availability
 
 Derived tables, figures, and the analysis code are available at this repository (real named repo URL — see `CITATION.cff`). Individual-level cohort data are available from CHARLS (<https://charls.pku.edu.cn/>) and NHANES (<https://www.cdc.gov/nchs/nhanes/>) under their respective access policies. MCP summary statistics: <https://researchdata.gla.ac.uk/822/1/chronic_pain-bgen.stats.gz> (DOIs 10.5525/gla.researchdata.822).
+
+## Cite
+
+Until the preprint DOI is assigned, cite this reproducibility package as:
+
+> Yang Y. *pain-cognition-mr* (version 1) [reproducibility package]. GitHub. https://github.com/yyx-4113/pain-cognition-mr
+
+Structured, machine-readable metadata is provided in [`CITATION.cff`](CITATION.cff). After the Research Square preprint is posted, please cite the preprint DOI (to be added here). The CHARLS-dependent analyses are not yet reportable and are excluded from any citation until version 2 / version A is released.
