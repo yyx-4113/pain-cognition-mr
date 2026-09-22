@@ -97,17 +97,36 @@ harmonize <- function(exp, out) {
 ## ---- MR estimators ----------------------------------------------------------
 ivw <- function(bx, by, sey, re = TRUE) {
   w <- 1 / sey^2
-  b <- sum(w * bx * by) / sum(w * bx^2)
+  b_fix <- sum(w * bx * by) / sum(w * bx^2)
   se_fix <- sqrt(1 / sum(w * bx^2))
-  Q <- sum(w * (by - b * bx)^2); df <- length(bx) - 1
+  Q <- sum(w * (by - b_fix * bx)^2); df <- length(bx) - 1
   pQ <- if (df > 0) pchisq(Q, df, lower.tail = FALSE) else NA
-  se_re <- if (re && Q > df && df > 0) se_fix * sqrt(Q / df) else se_fix
-  list(b_ivw = b, se_fixed = se_fix, se_re = se_re, Q = Q, df = df, pQ = pQ)
+  if (re && Q > df && df > 0) {
+    # Standard DerSimonian-Laird random-effects IVW: estimate tau^2, then re-weight.
+    # This correctly moves the point estimate between the fixed-effect value and the
+    # unweighted mean of per-SNP Wald ratios (it is NOT merely a SE rescaling).
+    S <- sum(w); Tt <- sum(w^2) / S
+    tau2 <- max(0, (Q - df) / (S - Tt))
+    w_re <- 1 / (sey^2 + tau2)
+    b_re <- sum(w_re * bx * by) / sum(w_re * bx^2)
+    se_re <- sqrt(1 / sum(w_re * bx^2))
+  } else {
+    b_re <- b_fix; se_re <- se_fix
+  }
+  list(b_ivw = b_fix, b_re = b_re, se_fixed = se_fix, se_re = se_re,
+       Q = Q, df = df, pQ = pQ)
 }
 mregger <- function(bx, by, sey) {
+  # MR-Egger with the FIXED-EFFECT variance assumption (sigma^2 = 1), matching the
+  # TwoSampleMR default and the deposited mr_forward_results_corrected.csv. The raw
+  # lm()+vcov() is dispersion-corrected (scaled by estimated residual variance);
+  # dividing by sqrt(sigma^2) rescales the SEs back to sigma^2 = 1. The
+  # dispersion-corrected alternative (intercept p ~ 0.70) is noted in the manuscript
+  # as a sensitivity only; the reported Egger value uses the fixed-effect convention.
   w <- 1 / sey^2
   fit <- lm(by ~ bx, weights = w)
-  cf <- coef(fit); vc <- sqrt(diag(vcov(fit)))
+  s2 <- summary(fit)$sigma^2
+  cf <- coef(fit); vc <- sqrt(diag(vcov(fit))) / sqrt(s2)
   list(slope = cf[2], se_slope = vc[2], intercept = cf[1], se_int = vc[1],
        p_int = 2 * pnorm(abs(cf[1] / vc[1]), lower.tail = FALSE))
 }

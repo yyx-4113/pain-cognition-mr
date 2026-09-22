@@ -9,6 +9,10 @@ authors:
     affiliation: "The Second Affiliated Hospital of Fujian University of Traditional Chinese Medicine"
 repository-code: "https://github.com/yyx-4113/pain-cognition-mr"
 license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22896666
+    description: "Archived reproducibility package (Zenodo record)"
 keywords:
   - "Mendelian randomization"
   - "chronic pain"

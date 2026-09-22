@@ -1,13 +1,12 @@
 # pain-cognition-mr
 
-**Multisite chronic pain and cognitive decline / dementia: a bidirectional two-sample Mendelian randomization study (version B — MR + NHANES descriptive support; CHARLS longitudinal pending)**
+**Multisite chronic pain and cognitive decline / dementia: a bidirectional two-sample Mendelian randomization study (version A — MR + NHANES descriptive support + CHARLS longitudinal evidence)**
 
 > **Preprint (version 1).** This repository is the reproducibility package for the preprint
 > *"Genetically predicted multisite chronic pain is associated with lower cognitive performance:
 > a bidirectional Mendelian randomization study with NHANES contextual evidence."*
 > The preprint is being posted to **Research Square** (not peer-reviewed). The CHARLS
-> longitudinal validation is planned (`[PENDING DATA]`) and will be incorporated to upgrade
-> this work to version 2 / version A once data-access is approved. Findings are
+> longitudinal validation is **now completed** (version A; see `docs/manuscript_draft.md` §2.7, §3.5, Table 2, Figure 9). Findings are
 > **hypothesis-generating**: causal direction is unresolved (significant reverse MR;
 > non-significant Steiger test), and the cognitive-performance result is constrained by
 > UK Biobank sample overlap between exposure and outcome.
@@ -22,11 +21,11 @@ A reproducible analysis package for the study protocol `方案二_多部位慢�
 
 | Item | Detail |
 |---|---|
-| Design | Bidirectional two-sample MR + two-step mediation (primary), with NHANES 2011–2018 **descriptive** correlates of subjective memory complaint; CHARLS China longitudinal component **pending data access** (version B) |
+| Design | Bidirectional two-sample MR + two-step mediation (primary), with NHANES 2011–2018 **descriptive** correlates of subjective memory complaint; CHARLS China 2011–2020 longitudinal component **completed (version A)** |
 | Exposure | Number of chronic pain sites (0 / 1 / 2 / ≥3) — "pain burden" dose gradient; genetic proxy = multisite chronic pain (MCP) GWAS |
 | Outcomes | Cognitive function / decline (CHARLS); cognitive performance GWAS & Alzheimer's / dementia GWAS (MR) |
 | Mediators | Depression, C-reactive protein (CRP), insomnia / sleep duration |
-| Status | Protocol + data-source verification complete; MR GWAS IDs closed (2026-09-20); MCP summary stats downloaded to `data/raw/`. **MR (forward/reverse/mediation) + NHANES auxiliary EXECUTED 2026-09-20** (results in `data/derived/` + `docs/RESULTS.md`). CHARLS longitudinal **pending user-downloaded `.dta`** in `data/raw/charls/raw/` (sandbox cannot log in to charls.pku.edu.cn). |
+| Status | Protocol + data-source verification complete; MR GWAS IDs closed (2026-09-20); MCP summary stats downloaded to `data/raw/`. **MR (forward/reverse/mediation) + NHANES auxiliary EXECUTED 2026-09-20** (results in `data/derived/` + `docs/RESULTS.md`). **CHARLS longitudinal EXECUTED 2026-09-21** (25,762 participants; `data/derived/charls_long.rds`, `charls_results_20260921.rds`, `docs/figures/fig_charls_rcs.*`; see `docs/manuscript_draft.md` §3.5). |
 
 ## Repository map
 
@@ -117,4 +116,4 @@ Until the preprint DOI is assigned, cite this reproducibility package as:
 
 > Yang Y. *pain-cognition-mr* (version 1) [reproducibility package]. GitHub. https://github.com/yyx-4113/pain-cognition-mr
 
-Structured, machine-readable metadata is provided in [`CITATION.cff`](CITATION.cff). After the Research Square preprint is posted, please cite the preprint DOI (to be added here). The CHARLS-dependent analyses are not yet reportable and are excluded from any citation until version 2 / version A is released.
+Structured, machine-readable metadata is provided in [`CITATION.cff`](CITATION.cff). After the Research Square preprint is posted, please cite the preprint DOI (to be added here). The CHARLS-dependent longitudinal analyses are reported in version A (`docs/manuscript_draft.md` §3.5, Table 2, Figure 9) and may be cited as part of this work.

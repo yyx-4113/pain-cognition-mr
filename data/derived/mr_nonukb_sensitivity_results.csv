@@ -1,4 +1,4 @@
 outcome,provenance,n_snps,IVW_beta,IVW_se_fixed,IVW_p_fixed,IVW_beta_RE,IVW_se_RE,Egger_beta,Egger_se,Egger_int,Egger_int_p,WMed_beta,WMed_se,Cochran_Q,Cochran_df,Cochran_p,I2_pct,LOO_min,LOO_max,LOO_flips,F_mean,F_min
-MCP->Cognitive_performance (UKB),"ebi-a-GCST006572 | UKB | N=257,841 | OVERLAP with MCP",41,-0.3614,0.0317,0.0,-0.4033,0.0749,-0.3623,0.0317,-0.000477,0.3441,-0.2332,0.0477,242.51,40,1.0,83.5,-0.3862,-0.3149,0,33.3,22.4
-"MCP->All_cause_dementia (FinnGen, non-UKB)",finn-b-F5_DEMENTIA | Finnish | NON-UKB,43,0.2339,0.2134,0.273,0.2339,0.2134,0.2085,0.2144,-0.004219,0.206,0.2198,0.3008,38.89,42,0.392,0.0,0.1629,0.293,0,33.0,22.4
-"MCP->Alzheimer_disease (IGAP, non-UKB)",ieu-a-297 | IGAP consortium | NON-UKB,42,0.4658,0.1749,0.008,0.4875,0.1908,0.4623,0.176,-0.000501,0.8561,0.2269,0.2492,48.77,41,0.811,15.9,0.3934,0.5177,0,33.0,22.4
+MCP->Cognitive_performance (UKB),"ebi-a-GCST006572 | UKB | N=257,841 | OVERLAP with MCP",41,-0.3614,0.0317,0.0,-0.4033,0.0749,-0.3623,0.0317,-0.000477,0.3441,-0.9486,0.0444,242.51,40,1.0,83.5,-0.3862,-0.3149,0,33.3,22.4
+"MCP->All_cause_dementia (FinnGen, non-UKB)",finn-b-F5_DEMENTIA | Finnish | NON-UKB,43,0.2339,0.2134,0.273,0.2339,0.2134,0.2085,0.2144,-0.004219,0.206,1.0150,0.3013,38.89,42,0.392,0.0,0.1629,0.293,0,33.0,22.4
+"MCP->Alzheimer_disease (IGAP, non-UKB)",ieu-a-297 | IGAP consortium | NON-UKB,42,0.4658,0.1749,0.008,0.4875,0.1908,0.4623,0.176,-0.000501,0.8561,-0.7032,0.2433,48.77,41,0.811,15.9,0.3934,0.5177,0,33.0,22.4

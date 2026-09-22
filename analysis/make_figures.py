@@ -91,7 +91,7 @@ LABELS = [
 ]
 
 METHODS = [("IVW", "IVW_beta", "IVW_se_fixed"),
-           ("Egger", "Egger_beta", "Egger_se"),
+           ("Egger", "Egger_beta", "IVW_se_fixed"),
            ("WMed", "WMed_beta", "WMed_se")]
 
 # per-SNP harmonized data for scatter / LOO / funnel

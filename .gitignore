@@ -1,0 +1,56 @@
+# Secrets — NEVER commit the OpenGWAS JWT (short-lived personal token)
+JWT.txt
+*.jwt
+.env
+.Renviron
+
+# Individual-level raw data — never commit (access-agreement governed)
+data/raw/charls/
+data/raw/nhanes/
+data/raw/chronic_pain-bgen.stats.gz
+data/raw/cwp_rahman2021.stats.gz
+data/raw/*.stats.gz
+
+# Derived (keep de-identified aggregate tables; ignore large intermediates)
+data/derived/*.rds
+
+# R / OS noise
+.Rhistory
+.Rproj.user/
+*.Rproj
+.DS_Store
+
+# Internal planning / agent data (not part of the reproducibility package)
+STATUS.md
+.workbuddy/
+
+# Excluded from the public Zenodo/GitHub archive (internal review, deprecated artifacts, noise)
+docs/EDITORIAL_REVIEW*.md
+docs/LOCAL_RUNBOOK.md
+data/derived/mr_bidirectional_results.csv
+docs/submission/__pycache__/
+
+# INDIVIDUAL-LEVEL / SENSITIVE — NEVER archive publicly
+# Raw access-agreement-governed data (keep only the provenance README)
+data/raw/
+!data/raw/README.md
+# Derived individual-level panel (96k person-wave rows: id, cog scores, pain, comorbidity)
+data/derived/charls_long.csv
+# Large RDS intermediates and their backups
+data/derived/*.rds
+data/derived/*.rds.bak*
+*.bak
+*.bak_20260922*
+docs/manuscript_draft.bak*
+
+# Internal review / editorial (not part of the public package)
+docs/REVIEW_round*.md
+docs/review_round*/
+
+# Raw-data inspection tooling + binaries (not part of the package)
+tools/
+UnRAR.exe
+license.txt
+
+# Debug dumps
+data/derived/_charls_*.txt
